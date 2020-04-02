@@ -1,0 +1,6 @@
+plugin:
+    name: 'schultenmedia.postmark::lang.plugin.name'
+    description: 'schultenmedia.postmark::lang.plugin.description'
+    author: 'Jochem Schulten'
+    icon: oc-icon-rocket
+    homepage: 'https://www.schultenmedia.nl/'

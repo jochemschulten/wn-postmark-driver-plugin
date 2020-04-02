@@ -1,0 +1,6 @@
+{
+    "require": {
+        "wildbit/postmark-php": "^2.9",
+        "wildbit/swiftmailer-postmark": "^3.1"
+    }
+}
