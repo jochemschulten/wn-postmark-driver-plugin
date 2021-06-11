@@ -15,6 +15,21 @@ class Plugin extends PluginBase {
 	 */
 	public $elevated = true;
 
+    /**
+     * Returns information about this plugin.
+     *
+     * @return array
+     */
+    public function pluginDetails()
+    {
+        return [
+            'name'        => 'schultenmedia.postmark::lang.plugin.name',
+            'description' => 'schultenmedia.postmark::lang.plugin.description',
+            'author'      => 'SchultenMedia',
+            'icon'        => 'icon-language',
+        ];
+    }
+
 	/**
 	 * {@inheritdoc}
 	 */

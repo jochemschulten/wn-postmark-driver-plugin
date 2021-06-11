@@ -1,0 +1,22 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+  user_agent:
+    label: schultenmedia.basics::lang.security.adminlogs.user_agent
+    type: partial
+    path: field_user_agent
+
+  referer:
+    label: schultenmedia.basics::lang.security.adminlogs.referer
+    type: partial
+    path: field_referer
+
+  location:
+    label: schultenmedia.basics::lang.security.adminlogs.location
+    type: partial
+    path: field_location
+
+  last_login:
+    label: schultenmedia.basics::lang.security.adminlogs.last_login

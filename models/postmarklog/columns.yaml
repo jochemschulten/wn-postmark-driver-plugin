@@ -1,0 +1,28 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+  user_id:
+    label: schultenmedia.postmark::lang.postmarklog.user_id
+    searchable: yes
+    sortable: yes
+
+  last_login:
+    label: schultenmedia.postmark::lang.postmarklog.last_login
+    type: datetime
+    format: j F Y\, l h:i:s A
+    searchable: yes
+    sortable: yes
+
+  user_name:
+    label: schultenmedia.basics::lang.postmarklog.user_name
+    searchable: yes
+    sortable: yes
+    select: (select concat(first_name, ' ', last_name) from backend_users where backend_users.id = user_id)
+
+  user_email:
+    label: schultenmedia.basics::lang.security.adminlogs.user_email
+    searchable: yes
+    sortable: yes
+    select: (select email from backend_users where backend_users.id = user_id)
